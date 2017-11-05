@@ -78,7 +78,7 @@ theme: destacked-theme
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:emmanuelnk/emmanuelnk.github.io.git
+  repo: https://github.com/emmanuelnk/emmanuelnk.github.io.git
   branch: master
 
 all_minifier: true
