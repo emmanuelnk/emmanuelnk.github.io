@@ -12,7 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:4000/
+# url: http://localhost:4000/
+url: https://emmanuelnk.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -76,7 +77,9 @@ theme: destacked-theme
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:emmanuelnk/emmanuelnk.github.io.git
+  branch: master
 
 all_minifier: true
 
@@ -114,6 +117,8 @@ dstkd:
 
 # Disqus comments
 disqus_shortname: emmanuelnk-github-io
+
+
 
 
 
