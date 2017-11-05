@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/destacked_hexo.iml" filepath="$PROJECT_DIR$/.idea/destacked_hexo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/destacked-theme.iml" filepath="$PROJECT_DIR$/.idea/destacked-theme.iml" />
     </modules>
   </component>
 </project>

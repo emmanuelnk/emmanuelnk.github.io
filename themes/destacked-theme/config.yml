@@ -1,0 +1,7 @@
+archives:
+  show_count: true
+  order: -1
+  type: monthly
+categories:
+  show_count: true
+  order: -1

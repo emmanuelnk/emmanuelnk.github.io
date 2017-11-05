@@ -1,0 +1,52 @@
+<%
+var title, pageType = '';
+if (page.category) {
+    title = page.category;
+    pageType = __("archives.category");
+}
+if (page.tag) {
+    title = page.tag;
+    pageType = __("archives.tagged");
+}
+if (page.archive){
+    if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+    else title = __("archives.archives");
+    pageType = date(`${page.year}-${page.month}`,`MMM YYYY`);
+}
+
+%>
+<div class="container-fluid blog-roll">
+    <div class="row blog-row">
+        <div class="col-xs-12">
+            <h1 class="archive-title">
+                <span class="page-type"><%- pageType %>:&nbsp;</span>
+                <% if (!page.archive) { %>
+                <span class="page-title"><%- title %></span>
+                <% } %>
+            </h1>
+        </div>
+    </div>
+    <div class="row blog-row">
+    <% page.posts.forEach(function(post){ %>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <img src="<%- post.featured_image %>" class="rounded float-right blog-featured-image " alt="...">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <div class="blog-excerpt-content">
+                    <h3><a href="<%- url_for(post.path) %>" class="seotitlelink"><%- post.title %></a></h3>
+                    <h5><span class="blogdate"><%- date(post.date,"ddd MMM D YYYY hh:mm a") %></span></h5>
+                    <% if (post.excerpt) {%>
+                    <p><%- post.excerpt %></p>
+                    <% } else { %>
+                    <p><%- post.content.replace(/<(?:.|\n)*?>/gm, '').replace(/\n/g,'').substring(0, 120 - 3) + " ..." %></p>
+                    <% } %>
+                    <p class="read-more hvr-pulse-shrink"><a href="<%- url_for(post.path)%>">> <%- __("index.read_more") %></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+    </div>
+</div>

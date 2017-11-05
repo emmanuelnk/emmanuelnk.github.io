@@ -1,0 +1,22 @@
+<%- partial('_partial/head') %>
+<body class="flex-top-wrapper flex-column">
+<%- partial('_partial/menu') %>
+<%- partial('_partial/header', {config: config,page:page}) %>
+
+<% if (is_home()) { %><%- partial('index') %><% } %>
+<% if (is_post()) { %><%- partial('post') %><% } %>
+<% if (is_category()) { %><%- partial('category') %><% } %>
+<% if (is_tag()) { %><%- partial('category') %><% } %>
+<% if (is_archive()) { %><%- partial('archive') %><% } %>
+<% if (is_page()) { %><%- partial('page') %><% } %>
+
+<% if (page.total > 1){ %>
+<nav id="page-nav">
+    <%- paginator({
+        prev_text: "&laquo; __('prev')",
+        next_text: "__('next') &raquo;"
+    }) %>
+</nav>
+<% } %>
+</body>
+</html>

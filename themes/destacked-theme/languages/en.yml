@@ -1,0 +1,13 @@
+index:
+  read_more: read more
+post:
+  view_all_cat: view all posts in category
+  by: By
+  in: in
+archives:
+  category: category
+  tagged: tagged
+  archives: Archives
+paginator:
+  next: next
+  prev: prev

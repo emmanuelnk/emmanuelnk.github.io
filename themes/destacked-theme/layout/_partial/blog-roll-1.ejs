@@ -1,0 +1,36 @@
+<div class="container blog-roll">
+    <% site.posts.forEach(function(post){ %>
+    <div class="row blog-row">
+        <% if (post.featured_image) {%>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <img src="<%- post.featured_image %>" class="rounded float-right blog-featured-image " alt="...">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+            <div class="blog-excerpt-content">
+                <h3><a href="<%- url_for(post.path) %>" class="seotitlelink"><%- post.title %></a></h3>
+                <h5><span class="blogdate"><%- date(post.date,"ddd MMM D YYYY hh:mm a") %></span></h5>
+                <% if (post.excerpt) {%>
+                <p><%- post.excerpt %></p>
+                <% } else { %>
+                <p><%- post.content.replace(/<(?:.|\n)*?>/gm, '').replace(/\n/g,'').substring(0, 120 - 3) + " ..." %></p>
+                <% } %>
+                <p class="read-more hvr-pulse-shrink"><a href="<%- url_for(post.path)%>">> <%- __("index.read_more") %></a></p>
+            </div>
+        </div>
+        <% } else { %>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="blog-excerpt-content">
+                <h3><a href="<%- url_for(post.path) %>" class="seotitlelink"><%- post.title %></a></h3>
+                <h5><span class="blogdate"><%- date(post.date,"ddd MMM D YYYY hh:mm a") %></span></h5>
+                <% if (post.excerpt) {%>
+                <p><%- post.excerpt %></p>
+                <% } else { %>
+                <p><%- post.content.replace(/<(?:.|\n)*?>/gm, '').replace(/\n/g,'').substring(0, 180 - 3) + " ..." %></p>
+                <% } %>
+                <p class="read-more hvr-pulse-shrink"><a href="<%- url_for(post.path)%>">> <%- __("index.read_more") %></a></p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <% }) %>
+</div>

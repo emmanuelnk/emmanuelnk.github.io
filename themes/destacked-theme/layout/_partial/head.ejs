@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%- css('css/highlightjs_styles/rainbow.css') %>
+	<%- css('css/font-awesome.min.css') %>
+	<%- css('css/bootstrap.min.css') %>
+	<%- css('css/animate.css') %>
+	<%- css('css/hover-min.css') %>
+    <%- css('css/simple-scrollbar.css')%>
+    <%- css('scss/starry-background.css') %>
+    <%- css('css/vex.min.css') %>
+    <%- css('css/vex-theme-wireframe.min.css') %>
+    <%- css('scss/main-theme-styles.css') %>
+	<%- js('js/jquery.min.js') %>
+    <%- js('js/jquery.mousewheel.min.js') %>
+    <%- js('js/simple-scrollbar.min.js')%>
+	<%- js('js/popper.min.js') %>
+	<%- js('js/bootstrap.min.js') %>
+    <%- js('js/bootbox.min.js') %>
+    <%- js('js/vex.combined.min.js') %>
+	<%- js('js/sliiide.js') %>
+	<%- js('js/particle-animation.js') %>
+	<%- js('js/typed.js') %>
+    <%- js('js/highlight.min.js') %>
+    <%- js('js/clipboard.min.js') %>
+    <%- js('js/main.js') %>
+</head>
