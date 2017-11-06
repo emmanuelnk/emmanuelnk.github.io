@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67891024-3efa-4a31-9da6-12972d8682ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/archive.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/category.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/recent_posts.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tag.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tagcloud.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/config.yml" afterPath="$PROJECT_DIR$/themes/destacked-theme/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/head.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/head.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/header.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main-theme-styles.css" afterPath="$PROJECT_DIR$/scss/main-theme-styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/post-style-1.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/post-style-1.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/layout.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/layout.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/js/main.js" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/_variables.scss" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css.map" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" />
@@ -59,17 +45,7 @@
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/post-style-1.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1100">
-              <caret line="65" column="80" lean-forward="true" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <caret line="65" column="80" lean-forward="false" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -78,8 +54,8 @@
       <file leaf-file-name="menu.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="74" column="181" lean-forward="false" selection-start-line="74" selection-start-column="181" selection-end-line="74" selection-end-column="181" />
+            <state relative-caret-position="167">
+              <caret line="70" column="80" lean-forward="true" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#div#0;n#h6#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#h6#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -92,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
@@ -102,21 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/header.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1443">
-              <caret line="173" column="36" lean-forward="true" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
+              <caret line="173" column="36" lean-forward="false" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
               <folding>
                 <marker date="1509981599138" expanded="true" signature="1714:1731" ph="..." />
                 <marker date="1509981599138" expanded="true" signature="5480:7840" ph="..." />
@@ -135,21 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/head.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-theme-styles.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-theme-styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="800" column="17" lean-forward="true" selection-start-line="800" selection-start-column="17" selection-end-line="800" selection-end-column="17" />
+            <state relative-caret-position="602">
+              <caret line="800" column="3" lean-forward="true" selection-start-line="800" selection-start-column="3" selection-end-line="800" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -227,11 +183,11 @@
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/source/js/main.js" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/header.ejs" />
-        <option value="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/head.ejs" />
-        <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/source/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs" />
+        <option value="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" />
       </list>
     </option>
   </component>
@@ -285,6 +241,34 @@
               <item name="emmanuelnk" type="b2602c69:ProjectViewProjectNode" />
               <item name="emmanuelnk" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emmanuelnk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emmanuelnk" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="destacked-theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emmanuelnk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emmanuelnk" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="destacked-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emmanuelnk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emmanuelnk" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="destacked-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="_partial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="emmanuelnk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="emmanuelnk" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="destacked-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156923000" />
+    <option name="totallyTimeSpent" value="157705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -702,7 +686,7 @@
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/post-style-1.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
-          <caret line="65" column="80" lean-forward="true" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
+          <caret line="65" column="80" lean-forward="false" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -728,10 +712,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss">
+    <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="800" column="17" lean-forward="true" selection-start-line="800" selection-start-column="17" selection-end-line="800" selection-end-column="17" />
+        <state relative-caret-position="154">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -739,7 +731,7 @@
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1443">
-          <caret line="173" column="36" lean-forward="true" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
+          <caret line="173" column="36" lean-forward="false" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
           <folding>
             <marker date="1509981599138" expanded="true" signature="1714:1731" ph="..." />
             <marker date="1509981599138" expanded="true" signature="5480:7840" ph="..." />
@@ -760,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/head.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -768,15 +760,15 @@
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="74" column="181" lean-forward="false" selection-start-line="74" selection-start-column="181" selection-end-line="74" selection-end-column="181" />
+        <state relative-caret-position="167">
+          <caret line="70" column="80" lean-forward="true" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
           <folding>
             <element signature="n#style#0;n#i#0;n#div#0;n#h6#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#h6#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -788,18 +780,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="602">
+          <caret line="800" column="3" lean-forward="true" selection-start-line="800" selection-start-column="3" selection-end-line="800" selection-end-column="3" />
           <folding />
         </state>
       </provider>

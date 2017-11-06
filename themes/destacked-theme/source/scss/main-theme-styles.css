@@ -614,7 +614,8 @@ pre {
     .soc-media-card-block .soc-card-title-links .block-2, .soc-media-card-block .soc-card-title-links .block-1 {
       padding-left: 0; }
       .soc-media-card-block .soc-card-title-links .block-2 a, .soc-media-card-block .soc-card-title-links .block-2 p, .soc-media-card-block .soc-card-title-links .block-1 a, .soc-media-card-block .soc-card-title-links .block-1 p {
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        color: #374252; }
   .soc-media-card-block .card-title {
     font-size: 1rem; }
   .soc-media-card-block a, .soc-media-card-block p {
