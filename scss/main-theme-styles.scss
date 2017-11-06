@@ -546,10 +546,6 @@ pre {
   padding-left:0;
 }
 /***********************************  SIDEBAR       ****************************************/
-.title-box-row{
-  padding:1rem 5rem!important;
-}
-
 .sidebar-widget-container {
   padding: 1rem 1rem;
   border-left: 1px solid #888888;
@@ -805,6 +801,7 @@ pre {
   }
 
 
+
 }
 
 /* Small devices (landscape phones, less than 768px)*/
@@ -845,6 +842,10 @@ pre {
   pre {
     font-size:1.3rem;
   }
+  .title-box-row{
+    padding:1rem 5rem!important;
+  }
+
 }
 
 /* Large devices (desktops, less than 1200px)*/
@@ -861,4 +862,8 @@ pre {
       padding:1rem 4rem;
     }
   }
+  .title-box-row{
+    padding:1rem 5rem!important;
+  }
+
 }
