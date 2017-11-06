@@ -4,7 +4,7 @@
 
 # Site
 title: emmanuelnk
-subtitle:
+subtitle: a coding blog
 description:
 author: Emmanuel
 language:
@@ -112,11 +112,18 @@ dstkd:
     github: https://github.com/emmanuelnk
     linkedin: https://www.linkedin.com/in/emmanuel-nsubuga-kyeyune
     medium: https://medium.com/@emmanuelkyeyune
+  secondary_slide_menu: true
 #    facebook:
 #    twitter:
 
 # Disqus comments
 disqus_shortname: emmanuelnk-github-io
+
+# sitemap
+sitemap:
+    path: sitemap.xml
+    tag: false
+    category: false
 
 
 

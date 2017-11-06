@@ -1,5 +1,5 @@
 <div class="container blog-roll">
-    <div class="row blog-row">
+    <div class="row blog-row title-box-row">
         <div class="col-xs-12">
             <h1><%- post.title %></h1>
             <br>
@@ -18,8 +18,11 @@
         </div>
     </div>
     <div class="row blog-row">
-        <div class="col-xs-12 hidden-overflow-x">
+        <div class="col-xs-12 col-sm-9 col-md-9 hidden-overflow-x">
             <p><%- post.content %></p>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 widget-col">
+            <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
         </div>
     </div>
     <% if (post.tags.length > 0) { %>
@@ -58,7 +61,7 @@
         </div>
     </div>
     <div class="row blog-row">
-        <div class="col-md-12">
+        <div class="col-xs-12 col-sm- 9 col-md-9">
             <div id="disqus_thread"></div>
             <%- partial('_partial/disqus-comments',{config: config,page:page})%>
         </div>

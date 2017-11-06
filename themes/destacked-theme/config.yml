@@ -5,3 +5,9 @@ archives:
 categories:
   show_count: true
   order: -1
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts

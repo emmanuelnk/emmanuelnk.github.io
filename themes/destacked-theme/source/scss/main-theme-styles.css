@@ -165,9 +165,15 @@ h2 {
 .bottom-menu {
   height: 100px; }
 
+.left-menu {
+  background: #282626; }
+
+.starry-sky {
+  width: 100%; }
+
 .right-menu {
   text-align: left;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); }
+  background: #282626; }
   .right-menu p, .right-menu a {
     font-size: 1rem; }
   .right-menu a {
@@ -206,6 +212,9 @@ h2 {
 
 .dropdown-caret {
   padding: 0 0.5rem; }
+
+.sliding-menu-right a, .sliding-menu-right p {
+  color: #374252; }
 
 /**************************  BLOG ROLL STYLES ******************************/
 .seotitlelink {
@@ -257,8 +266,7 @@ canvas {
   object-fit: scale-down;
   /* Do not scale the image */
   object-position: top;
-  /* Center the image within the element */
-  height: 280px; }
+  /* Center the image within the element */ }
 
 .blog-nav-image {
   width: 100%;
@@ -426,6 +434,30 @@ pre {
 .post-nav-col {
   padding-left: 0; }
 
+/***********************************  SIDEBAR       ****************************************/
+.title-box-row {
+  padding: 1rem 5rem !important; }
+
+.sidebar-widget-container {
+  padding: 1rem 1rem;
+  border-left: 1px solid #888888; }
+
+.widget-title {
+  font-size: 1.3rem;
+  text-align: right;
+  /* background-color: white; */ }
+
+.widget > ul > li {
+  text-align: right;
+  font-size: 1rem;
+  list-style-type: none; }
+
+.widget > ul > li > a, .widget-title {
+  color: #888888; }
+
+.widget > ul > li > a:hover {
+  color: #e74c3c; }
+
 /*******************************     VEX POP-UP    ****************************************/
 .soc-media-container {
   display: flex;
@@ -441,7 +473,8 @@ pre {
     font-weight: bold; }
 
 .soc-card {
-  border: none; }
+  border: none;
+  border-radius: 0; }
 
 .vex-dialog-buttons {
   display: none; }
@@ -451,13 +484,13 @@ pre {
   background: #fff;
   color: #374252;
   border: 2px solid #374252;
-  border-radius: 1rem; }
+  border-radius: 0; }
 
 .soc-card-title-links {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column; }
   .soc-card-title-links .block-2 {
-    padding-left: 1rem; }
+    padding-left: 0; }
 
 /**************************  DEVICE SPECIFIC MEDIA QUERIES ******************************/
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -489,6 +522,9 @@ pre {
     color: white;
     text-decoration: none;
     margin: 0 20px; }
+
+  .sliding-menu-right a, .sliding-menu-right p {
+    color: #374252; }
 
   .left-menu-li-items {
     text-align: center; }
@@ -540,7 +576,8 @@ pre {
     .right-menu .exit {
       position: relative;
       color: white;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 30px; }
     .right-menu .right-exit {
       top: 0;
       left: 1rem; }
@@ -572,10 +609,22 @@ pre {
     height: 32px;
     width: 32px; }
 
-  .soc-card-title-links {
+  .soc-media-card-block .soc-card-title-links {
     flex-direction: column; }
-    .soc-card-title-links .block-2 {
-      padding-left: 0; } }
+    .soc-media-card-block .soc-card-title-links .block-2, .soc-media-card-block .soc-card-title-links .block-1 {
+      padding-left: 0; }
+      .soc-media-card-block .soc-card-title-links .block-2 a, .soc-media-card-block .soc-card-title-links .block-2 p, .soc-media-card-block .soc-card-title-links .block-1 a, .soc-media-card-block .soc-card-title-links .block-1 p {
+        font-size: 0.8rem; }
+  .soc-media-card-block .card-title {
+    font-size: 1rem; }
+  .soc-media-card-block a, .soc-media-card-block p {
+    font-size: 0.8rem; }
+  .soc-media-card-block .soc-media-container a {
+    font-size: 1rem; }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 140px; } }
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 768px) and (max-width: 990px) {
   .blog-roll {

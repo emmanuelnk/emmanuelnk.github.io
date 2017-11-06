@@ -3,7 +3,9 @@ $color-1:#374252; // color for site wide text
 $color-2:#fff; // color for site wide body
 $color-3:#e74c3c; // color for sitewide links
 $color-4:#555; //color for secondary text like blog post dates
-$starry-sky-color:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+$color-5:#282626;
+// $starry-sky-color:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+$starry-sky-color:$color-5;
 
 // color definitions
 

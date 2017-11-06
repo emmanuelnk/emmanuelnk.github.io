@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     // For slider menu
     $('.left-menu').sliiide({place: 'left', exit_selector: '.left-exit', toggle: '#nav-icon',no_scroll:false});
-    $('.right-menu').sliiide({place: 'right', exit_selector: '.right-exit', toggle: '#archive-icon',no_scroll:false});
+    $('.right-menu').sliiide({place: 'right', exit_selector: '.right-exit', toggle: '.site-title-img',no_scroll:false});
     checkWindowSize();
 
     // side menu fix for showing archives list
@@ -137,41 +137,41 @@ $(document).ready(function() {
 
 
     // whenyou click on the image in the right of the navbar
-    $(".site-title-img").on("click", function(){
-        const personBlogInfo = JSON.parse(decodeURIComponent($("#head-data")[0].dataset.personInfo).replace(/%27/g, "'"));
-        // console.log(personBlogInfo);
-        function fetchContactFormPopup () {
-
-        }
-        vex.dialog.alert({
-            unsafeMessage:
-                `
-                  <div class="card soc-card">
-                    <img class="card-img-top" src="${personBlogInfo.person_info.nav_img_url}" alt="Card image cap">
-                    <div class="card-block soc-media-card-block">
-                      <h2 class="card-title">${personBlogInfo.person_info.fullname}</h2>
-                      <h6 class="soc-card-title-links">
-                        <div class="block-1">
-                            <i style="padding:0 1rem 0 0" class="fa fa-heart" aria-hidden="true"></i>${personBlogInfo.person_info.country}<br>
-                            <i style="padding:0 1.2rem 0 0.2rem" class="fa fa-map-marker" aria-hidden="true"></i>${personBlogInfo.person_info.location}
-                        </div>
-                        <div class="block-2">
-                            <a target="_blank" href="${personBlogInfo.person_info.website.link}"><i style="padding:0 1rem 0 0.1rem" class="fa fa-globe" aria-hidden="true"></i>${personBlogInfo.person_info.website.title}</a><br>
-                            <a target="_blank" href="${personBlogInfo.person_info.resume.link}"><i style="padding:0 1rem 0 0rem" class="fa fa-rocket" aria-hidden="true"></i>${personBlogInfo.person_info.resume.title}</a>
-                        </div>
-                      </h6>
-                      <p class="card-text" style="padding-top:1rem;">${personBlogInfo.person_info.description}</p>
-                      <div class="soc-media-container">
-                        <a class="soc-media-link" target="_blank" title="Contact me by email" href="${personBlogInfo.social_media_links.contact}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                        <a class="soc-media-link" target="_blank" title="See my Github" href="${personBlogInfo.social_media_links.github}"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a class="soc-media-link" target="_blank" title="Follow me in Medium" href="${personBlogInfo.social_media_links.medium}"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                        <a class="soc-media-link" target="_blank" title="Find me on LinkedIn" href="${personBlogInfo.social_media_links.linkedin}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                `,
-             // Overwrites defaultOptions
-            showCloseButton: true
-        });
-    });
+    // $(".site-title-img").on("click", function(){
+    //     const personBlogInfo = JSON.parse(decodeURIComponent($("#head-data")[0].dataset.personInfo).replace(/%27/g, "'"));
+    //     // console.log(personBlogInfo);
+    //     function fetchContactFormPopup () {
+    //
+    //     }
+    //     vex.dialog.alert({
+    //         unsafeMessage:
+    //             `
+    //               <div class="card soc-card">
+    //                 <img class="card-img-top" src="${personBlogInfo.person_info.nav_img_url}" alt="Card image cap">
+    //                 <div class="card-block soc-media-card-block">
+    //                   <h2 class="card-title">${personBlogInfo.person_info.fullname}</h2>
+    //                   <h6 class="soc-card-title-links">
+    //                     <div class="block-1">
+    //                         <i style="padding:0 1rem 0 0" class="fa fa-heart" aria-hidden="true"></i>${personBlogInfo.person_info.country}<br>
+    //                         <i style="padding:0 1.2rem 0 0.2rem" class="fa fa-map-marker" aria-hidden="true"></i>${personBlogInfo.person_info.location}
+    //                     </div>
+    //                     <div class="block-2">
+    //                         <a target="_blank" href="${personBlogInfo.person_info.website.link}"><i style="padding:0 1rem 0 0.1rem" class="fa fa-globe" aria-hidden="true"></i>${personBlogInfo.person_info.website.title}</a><br>
+    //                         <a target="_blank" href="${personBlogInfo.person_info.resume.link}"><i style="padding:0 1rem 0 0rem" class="fa fa-rocket" aria-hidden="true"></i>${personBlogInfo.person_info.resume.title}</a>
+    //                     </div>
+    //                   </h6>
+    //                   <p class="card-text" style="padding-top:1rem;">${personBlogInfo.person_info.description}</p>
+    //                   <div class="soc-media-container">
+    //                     <a class="soc-media-link" target="_blank" title="Contact me by email" href="${personBlogInfo.social_media_links.contact}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    //                     <a class="soc-media-link" target="_blank" title="See my Github" href="${personBlogInfo.social_media_links.github}"><i class="fa fa-github" aria-hidden="true"></i></a>
+    //                     <a class="soc-media-link" target="_blank" title="Follow me in Medium" href="${personBlogInfo.social_media_links.medium}"><i class="fa fa-medium" aria-hidden="true"></i></a>
+    //                     <a class="soc-media-link" target="_blank" title="Find me on LinkedIn" href="${personBlogInfo.social_media_links.linkedin}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    //                   </div>
+    //                 </div>
+    //               </div>
+    //             `,
+    //          // Overwrites defaultOptions
+    //         showCloseButton: true
+    //     });
+    // });
 });
