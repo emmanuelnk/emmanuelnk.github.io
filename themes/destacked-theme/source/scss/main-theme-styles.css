@@ -435,9 +435,6 @@ pre {
   padding-left: 0; }
 
 /***********************************  SIDEBAR       ****************************************/
-.title-box-row {
-  padding: 1rem 5rem !important; }
-
 .sidebar-widget-container {
   padding: 1rem 1rem;
   border-left: 1px solid #888888; }
@@ -653,7 +650,10 @@ pre {
       padding: 1rem 4rem; }
 
   pre {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  .title-box-row {
+    padding: 1rem 5rem !important; } }
 /* Large devices (desktops, less than 1200px)*/
 @media (min-width: 1199px) {
   .nav-icons {
@@ -665,6 +665,9 @@ pre {
   .blog-roll {
     margin-top: 10rem; }
     .blog-roll .blog-row {
-      padding: 1rem 4rem; } }
+      padding: 1rem 4rem; }
+
+  .title-box-row {
+    padding: 1rem 5rem !important; } }
 
 /*# sourceMappingURL=main-theme-styles.css.map */
