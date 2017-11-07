@@ -4,6 +4,7 @@ layout: post
 date: 2017-11-05 10:48:33
 author:
 featured_image: hexo.png
+hero_image: sunset-road.jpg
 categories: [hexo]
 tags: [hexo,wordpress,blog creation]
 ---

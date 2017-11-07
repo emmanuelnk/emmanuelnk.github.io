@@ -95,7 +95,7 @@ h2 {
   padding: 1.3rem 1.5rem 0.5rem 1.5rem;
   text-align: right;
   z-index:100;
-  background-color: $body-background-color;
+  background-color: transparent;
 
   h1, p{
     font-weight:bold;
@@ -163,6 +163,10 @@ h2 {
     margin: 0 20px;
   }
 
+  p{
+    margin: 0;
+  }
+
   a:hover {
     color: #e74c3c;
   }
@@ -217,7 +221,7 @@ h2 {
 
 .right-menu {
   text-align:left;
-  background:$starry-sky-color;
+  background:$space-color;
   width:400px;
 
   p, a{
@@ -281,7 +285,7 @@ h2 {
 
 .sliding-menu-right {
   a, p {
-    color:$body-font-color;
+    color:$body-background-color;
   }
 
 }
@@ -356,29 +360,32 @@ canvas {
 }
 
 .blog-roll{
-  margin-top: 15rem;
+  margin-top: 12rem;
   .row {
     margin-bottom:1rem;
   }
 }
+.roll-post {
+  margin-top:5rem;
+}
 
 .read-more {
-  a {
-    color:$slide-nav-link-color-hover;
-    font-weight:bold;
-  }
-  a:hover{
-    color:$body-font-color;
-  }
+  vertical-align: text-bottom;
+  color:$slide-nav-link-color-hover;
+  font-weight:bold;
+}
+
+.read-more:hover {
+  color:$body-font-color;
 }
 // tag styles
 
 .blog-post-tag {
-  background: $body-font-color;
+  background: $blogarchives-color;
   color: $body-background-color;
-  padding: 0.2rem 0.7rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
   margin: 0.1rem 0.2rem 0.1rem 0;
 }
 
@@ -579,7 +586,7 @@ pre {
   display:none;
   font-weight: bold;
   font-size: 1rem;
-  color: #adadad;
+  color: $blogarchives-color;
   text-align: right;
 }
 .is-hidden {
@@ -601,17 +608,20 @@ pre {
 
   .card-title {
     font-weight:bold;
+    color: $body-background-color;
   }
 }
 
 .soc-card {
   border:none;
   border-radius:0;
+  background:transparent;
 }
 
 .vex-dialog-buttons {
   display: none;
 }
+
 .vex-popup-container {
   font-family: $theme-font-family!important;
   background: $body-background-color;
@@ -626,7 +636,23 @@ pre {
 
   .block-2 {
     padding-left:0;
+    color:$body-background-color;
   }
+  .block-1{
+    color:$body-background-color;
+  }
+}
+/*************************           HERO IMG           *********************************/
+.wide {
+  margin-top: 6rem;
+}
+
+.wide-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 50vh;
 }
 /**************************  DEVICE SPECIFIC MEDIA QUERIES ******************************/
 
@@ -708,8 +734,14 @@ pre {
   }
 
   .blog-roll{
-    margin-top: 6rem;
+    margin-top: 4rem;
     padding: 0 1.3rem
+  }
+  .roll-post {
+    margin-top:2rem;
+  }
+  .wide {
+    margin-top:4rem;
   }
 
   .right-menu {
@@ -794,6 +826,7 @@ pre {
       flex-direction: column;
       .block-2, .block-1 {
         padding-left:0;
+        color:$body-font-color;
         a, p {
           font-size: 0.8rem;
           color:$body-font-color;
@@ -833,10 +866,13 @@ pre {
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 768px) and (max-width: 990px) {
   .blog-roll{
-    margin-top: 8rem;
+    margin-top: 10rem;
     .blog-row{
       padding:2rem;
     }
+  }
+  .roll-post {
+    margin-top:4rem;
   }
 
   pre {
@@ -859,10 +895,13 @@ pre {
     padding:0 1rem;
   }
   .blog-roll{
-    margin-top: 10rem;
+    margin-top: 12rem;
     .blog-row{
       padding:1rem 4rem;
     }
+  }
+  .roll-post {
+    margin-top:5rem;
   }
 
   pre {
@@ -888,10 +927,13 @@ pre {
     padding:0 1rem;
   }
   .blog-roll{
-    margin-top: 10rem;
+    margin-top: 12rem;
     .blog-row{
       padding:1rem 4rem;
     }
+  }
+  .roll-post {
+    margin-top:5rem;
   }
   .title-box-row{
     padding:1rem 5rem!important;

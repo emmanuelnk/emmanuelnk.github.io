@@ -74,7 +74,7 @@ h2 {
   padding: 1.3rem 1.5rem 0.5rem 1.5rem;
   text-align: right;
   z-index: 100;
-  background-color: #fff; }
+  background-color: transparent; }
   .blog-title h1, .blog-title p {
     font-weight: bold; }
 
@@ -128,6 +128,8 @@ h2 {
     color: #fff;
     text-decoration: none;
     margin: 0 20px; }
+  .sliding-menu p {
+    margin: 0; }
   .sliding-menu a:hover {
     color: #e74c3c; }
   .sliding-menu ul {
@@ -216,7 +218,7 @@ h2 {
   padding: 0 0.5rem; }
 
 .sliding-menu-right a, .sliding-menu-right p {
-  color: #374252; }
+  color: #fff; }
 
 /**************************  BLOG ROLL STYLES ******************************/
 .seotitlelink {
@@ -279,22 +281,27 @@ canvas {
   /* Center the image within the element */ }
 
 .blog-roll {
-  margin-top: 15rem; }
+  margin-top: 12rem; }
   .blog-roll .row {
     margin-bottom: 1rem; }
 
-.read-more a {
+.roll-post {
+  margin-top: 5rem; }
+
+.read-more {
+  vertical-align: text-bottom;
   color: #e74c3c;
   font-weight: bold; }
-.read-more a:hover {
+
+.read-more:hover {
   color: #374252; }
 
 .blog-post-tag {
-  background: #374252;
+  background: #adadad;
   color: #fff;
-  padding: 0.2rem 0.7rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
   margin: 0.1rem 0.2rem 0.1rem 0; }
 
 .category-link {
@@ -482,11 +489,13 @@ pre {
 .soc-media-card-block {
   padding: 1rem; }
   .soc-media-card-block .card-title {
-    font-weight: bold; }
+    font-weight: bold;
+    color: #fff; }
 
 .soc-card {
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  background: transparent; }
 
 .vex-dialog-buttons {
   display: none; }
@@ -502,7 +511,21 @@ pre {
   display: flex;
   flex-direction: column; }
   .soc-card-title-links .block-2 {
-    padding-left: 0; }
+    padding-left: 0;
+    color: #fff; }
+  .soc-card-title-links .block-1 {
+    color: #fff; }
+
+/*************************           HERO IMG           *********************************/
+.wide {
+  margin-top: 6rem; }
+
+.wide-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 50vh; }
 
 /**************************  DEVICE SPECIFIC MEDIA QUERIES ******************************/
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -566,8 +589,14 @@ pre {
     height: 240px; }
 
   .blog-roll {
-    margin-top: 6rem;
+    margin-top: 4rem;
     padding: 0 1.3rem; }
+
+  .roll-post {
+    margin-top: 2rem; }
+
+  .wide {
+    margin-top: 4rem; }
 
   .right-menu {
     text-align: left; }
@@ -624,7 +653,8 @@ pre {
   .soc-media-card-block .soc-card-title-links {
     flex-direction: column; }
     .soc-media-card-block .soc-card-title-links .block-2, .soc-media-card-block .soc-card-title-links .block-1 {
-      padding-left: 0; }
+      padding-left: 0;
+      color: #374252; }
       .soc-media-card-block .soc-card-title-links .block-2 a, .soc-media-card-block .soc-card-title-links .block-2 p, .soc-media-card-block .soc-card-title-links .block-1 a, .soc-media-card-block .soc-card-title-links .block-1 p {
         font-size: 0.8rem;
         color: #374252; }
@@ -651,9 +681,12 @@ pre {
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 768px) and (max-width: 990px) {
   .blog-roll {
-    margin-top: 8rem; }
+    margin-top: 10rem; }
     .blog-roll .blog-row {
       padding: 2rem; }
+
+  .roll-post {
+    margin-top: 4rem; }
 
   pre {
     font-size: 1rem; }
@@ -670,9 +703,12 @@ pre {
     padding: 0 1rem; }
 
   .blog-roll {
-    margin-top: 10rem; }
+    margin-top: 12rem; }
     .blog-roll .blog-row {
       padding: 1rem 4rem; }
+
+  .roll-post {
+    margin-top: 5rem; }
 
   pre {
     font-size: 1.3rem; }
@@ -692,9 +728,12 @@ pre {
     padding: 0 1rem; }
 
   .blog-roll {
-    margin-top: 10rem; }
+    margin-top: 12rem; }
     .blog-roll .blog-row {
       padding: 1rem 4rem; }
+
+  .roll-post {
+    margin-top: 5rem; }
 
   .title-box-row {
     padding: 1rem 5rem !important; } }

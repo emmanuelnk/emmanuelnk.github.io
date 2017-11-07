@@ -1,15 +1,20 @@
-<div class="container blog-roll">
+<% if (post.hero_image) { %>
+<div class="wide">
+    <img src="<%- url_for(post.path) + post.hero_image %>" class="wide-img ">
+</div>
+<% } %>
+<div class="container blog-roll roll-post">
     <div class="row blog-row title-box-row">
         <div class="col-xs-12">
             <h1><%- post.title %></h1>
             <br>
-            <h6>
+            <h6><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>
                 <% if(post.author) { %>
                 <%- __("by") %> &nbsp<%- post.author %>,&nbsp
                 <% } %>
-                <%- date(post.date, "ddd MMM D YYYY hh:mm a") %></h6>
+                <%- date(post.date, "dddd, MMM D YYYY") %></h6>
             <% if (post.categories.length > 0) { %>
-            <h6><%- __("in") %>&nbsp;
+            <h6><i class="fa fa-bookmark-o fa-fw" aria-hidden="true"></i>
                 <% post.categories.forEach(function(category){ %>
                 <a class="category-link hvr-pulse-shrink" title="<%- __("post.view_all_cat")%>: <%- category.name %>" href="<%- category.permalink %>"><%- category.name %></a>
                 <% }); %>
@@ -20,25 +25,20 @@
     <div class="row blog-row">
         <div class="col-xs-12 col-sm-9 col-md-9 hidden-overflow-x">
             <p><%- post.content %></p>
+            <% if (post.tags.length > 0) { %>
+            <p>
+                <% post.tags.forEach(function(tag){ %>
+                <a class="blog-post-tag hvr-pulse-shrink" href="<%- tag.permalink %>">
+                    <i class="fa fa-tag fa-fw" aria-hidden="true"></i><%- tag.name %>
+                </a>
+                <% }); %>
+            </p>
+            <% } %>
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3 widget-col">
             <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
         </div>
     </div>
-    <% if (post.tags.length > 0) { %>
-    <div class="row blog-row tag-row">
-        <div class="col-xs-12">
-            <p>
-                <% post.tags.forEach(function(tag){ %>
-                <a class="blog-post-tag hvr-pulse-shrink" href="<%- tag.permalink %>">
-                    <i class="fa fa-tag" aria-hidden="true" style="padding:0 0.5rem 0 0;"></i><%- tag.name %>
-                </a>
-                <% }); %>
-            </p>
-        </div>
-    </div>
-    <% } %>
-
     <div class="row blog-row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 post-nav-col">
             <% if (post.prev) { %>
