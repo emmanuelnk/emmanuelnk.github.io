@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67891024-3efa-4a31-9da6-12972d8682ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/css/flags/flags.png" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/css/flags/flags.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/Hello-Hexo.md" afterPath="$PROJECT_DIR$/source/_posts/Hello-Hexo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/languages/en.yml" afterPath="$PROJECT_DIR$/themes/destacked-theme/languages/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/sidebar.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_partial/sidebar.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/archive.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/archive.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/category.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/category.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/recent_posts.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/recent_posts.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tag.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tag.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tagcloud.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tagcloud.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/layout/layout.ejs" afterPath="$PROJECT_DIR$/themes/destacked-theme/layout/layout.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/css/flags/flags.min.css" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/css/flags/flags.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/js/main.js" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css.map" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" afterPath="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,11 +51,21 @@
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
-              <caret line="106" column="52" lean-forward="true" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+              <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <marker date="1510023468158" expanded="true" signature="1840:1857" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-theme-styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main-theme-styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="827" column="3" lean-forward="true" selection-start-line="827" selection-start-column="3" selection-end-line="827" selection-end-column="3" />
+            <state relative-caret-position="-402">
+              <caret line="827" column="3" lean-forward="false" selection-start-line="827" selection-start-column="3" selection-end-line="827" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -170,7 +162,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/source/css/flags/flags.min.css" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/category.ejs" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/archive.ejs" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/_widget/tag.ejs" />
@@ -184,6 +175,7 @@
         <option value="$PROJECT_DIR$/themes/destacked-theme/source/js/main.js" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -330,7 +322,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164671000" />
+    <option name="totallyTimeSpent" value="165069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -340,7 +332,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -665,14 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_widget/archive.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -737,7 +721,7 @@
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/layout/_partial/menu.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -758,10 +742,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402">
+          <caret line="827" column="3" lean-forward="false" selection-start-line="827" selection-start-column="3" selection-end-line="827" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="106" column="52" lean-forward="true" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+          <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <marker date="1510023468158" expanded="true" signature="1840:1857" ph="..." />
@@ -769,10 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/destacked-theme/source/scss/main-theme-styles.scss">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="827" column="3" lean-forward="true" selection-start-line="827" selection-start-column="3" selection-end-line="827" selection-end-column="3" />
+        <state relative-caret-position="440">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>
