@@ -28,6 +28,7 @@ a:hover {
 
 p {
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 h1 {
@@ -217,6 +218,7 @@ h2 {
 .right-menu {
   text-align:left;
   background:$starry-sky-color;
+  width:400px;
 
   p, a{
     font-size: 1rem;
@@ -546,6 +548,9 @@ pre {
   padding-left:0;
 }
 /***********************************  SIDEBAR       ****************************************/
+.title-box-row{
+  padding:1rem 1rem;
+}
 .sidebar-widget-container {
   padding: 1rem 1rem;
   border-left: 1px solid #888888;
@@ -568,6 +573,17 @@ pre {
 }
 .widget > ul > li > a:hover {
   color: $main-link-color;
+}
+
+.hide-sidebar {
+  display:none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #adadad;
+  text-align: right;
+}
+.is-hidden {
+  display:none;
 }
 /*******************************     VEX POP-UP    ****************************************/
 
@@ -800,6 +816,16 @@ pre {
     height: 140px;
   }
 
+  .widget > ul > li,.widget-title {
+    text-align: left;
+  }
+  .hide-sidebar {
+    display:initial;
+  }
+  .ss-content {
+    padding: 0px 4px 0 0;
+    right: -15px;
+  }
 
 
 }
@@ -844,6 +870,11 @@ pre {
   }
   .title-box-row{
     padding:1rem 5rem!important;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 12rem;
   }
 
 }
