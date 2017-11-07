@@ -19,7 +19,8 @@ a:hover {
   color: #e74c3c; }
 
 p {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: justify; }
 
 h1 {
   color: #374252;
@@ -173,7 +174,8 @@ h2 {
 
 .right-menu {
   text-align: left;
-  background: #282626; }
+  background: #282626;
+  width: 400px; }
   .right-menu p, .right-menu a {
     font-size: 1rem; }
   .right-menu a {
@@ -435,6 +437,9 @@ pre {
   padding-left: 0; }
 
 /***********************************  SIDEBAR       ****************************************/
+.title-box-row {
+  padding: 1rem 1rem; }
+
 .sidebar-widget-container {
   padding: 1rem 1rem;
   border-left: 1px solid #888888; }
@@ -454,6 +459,16 @@ pre {
 
 .widget > ul > li > a:hover {
   color: #e74c3c; }
+
+.hide-sidebar {
+  display: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #adadad;
+  text-align: right; }
+
+.is-hidden {
+  display: none; }
 
 /*******************************     VEX POP-UP    ****************************************/
 .soc-media-container {
@@ -622,7 +637,17 @@ pre {
 
   .card-img-top {
     object-fit: cover;
-    height: 140px; } }
+    height: 140px; }
+
+  .widget > ul > li, .widget-title {
+    text-align: left; }
+
+  .hide-sidebar {
+    display: initial; }
+
+  .ss-content {
+    padding: 0px 4px 0 0;
+    right: -15px; } }
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 768px) and (max-width: 990px) {
   .blog-roll {
@@ -653,7 +678,11 @@ pre {
     font-size: 1.3rem; }
 
   .title-box-row {
-    padding: 1rem 5rem !important; } }
+    padding: 1rem 5rem !important; }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 12rem; } }
 /* Large devices (desktops, less than 1200px)*/
 @media (min-width: 1199px) {
   .nav-icons {

@@ -12,8 +12,7 @@ For a while now I've been growing weary of self-hosted Wordpress (for blogging p
 
 There's nothing worse than logging into Wordpress, finding one million things that need to be updated and losing all your energy to blog. Or even worse, opening up your site to see "Hacked By Mister Spy" because of some server/plugin vulnerability that left your site to the wolves. Ughh. 
 
-Wordpress (self-hosted) isn't a terrible platform. It just has too many dependencies and machinery for someone interested in making a simple blog. You will be at the mercy of plugin developers and their ability to keep their code
-up to date. And if you're like me (more of a Javascripter than PHPer), with Wordpress, you will also lose control of many design aspects of your site and will have to rely on the free and premium themes out there unless you're willing to dive deep into Wordpress/PHP design code. 
+Wordpress (self-hosted) isn't a terrible platform. It just has too many dependencies and machinery for someone interested in making a simple blog. You will be at the mercy of plugin developers and their ability to keep their code up to date. And if you're like me (more of a Javascripter than PHPer), with Wordpress, you will also lose control of many design aspects of your site and will have to rely on the free and premium themes out there unless you're willing to dive deep into Wordpress/PHP design code. 
 
 So you can imagine my elation when one fateful day I came across an amazing article on the benefits of static sites for blogging. I had heard about static sites obviously but didn't realize the existence of whole blogging platforms that utilize this principle. I quickly learned that static blogging sites are much easier to secure, they are blazingly fast, cheap to host (think github pages, heroku) and come with version control. This was perfect for me. 
 

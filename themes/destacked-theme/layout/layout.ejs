@@ -1,7 +1,7 @@
 <%- partial('_partial/head') %>
 <body class="flex-top-wrapper flex-column">
-<%- partial('_partial/menu'), {config: config} %>
-<%- partial('_partial/header', {config: config,page:page}) %>
+<%- partial('_partial/menu') %>
+<%- partial('_partial/header', {page:page}) %>
 
 <% if (is_home()) { %>
     <%- partial('index') %>

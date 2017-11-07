@@ -23,42 +23,8 @@
     <!--<canvas id="network-nodes-canvas"></canvas>-->
 </div><!--Nav menu ends here -->
 
-<!-- RIGHT SIDE MENU -->
-<!--<% if (config.dstkd.secondary_slide_menu) { %>-->
-<!--<div  ss-container class="sliding-menu flex-top-wrapper flex-column right-menu">-->
-<!--<div class="starry-sky">-->
-<!--<div class='stars'></div>-->
-<!--<div class='stars2'></div>-->
-<!--<div class='stars3'></div>-->
-<!--</div>-->
-<!--<div class="row">-->
-<!--<div class="col-md-12">-->
-<!--<span class="sliiider-exit exit right-exit hvr-pulse-grow">&#215</span>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="row right-menu-row">-->
-<!--<div class="col-md-12">-->
-<!--<% if (site.posts.length) { %>-->
-<!--<h3 class="right-side-menu-heading" data-toggle="collapse" data-target=".recent-posts-list">Recent Posts<i class="fa fa-caret-down dropdown-caret" aria-expanded="true"></i></h3>-->
-<!--<ul class="right-menu-li-items recent-posts-list">-->
-<!--<% site.posts.sort('date', -1).limit(5).each(function(post){ %>-->
-<!--<li>-->
-<!--<a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>-->
-<!--</li>-->
-<!--<% }) %>-->
-<!--</ul>-->
-<!--<% } %>-->
-<!--<h3 class="right-side-menu-heading" data-toggle="collapse" data-target=".categories-list">Categories<i class="fa fa-caret-down dropdown-caret" aria-expanded="true"></i></h3>-->
-<!--<%- list_categories({class: "categories"}) %>-->
-<!--<h3 class="right-side-menu-heading" data-toggle="collapse" data-target=".archives-list">Archives<i class="fa fa-caret-down dropdown-caret" aria-expanded="true"></i></h3>-->
-<!--<%- list_archives({class: "archives", order: -1}) %>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<% } %>-->
-
 <% if (config.dstkd.secondary_slide_menu) { %>
-<div class="sliding-menu sliding-menu-right flex-top-wrapper flex-column right-menu">
+<div ss-container class="sliding-menu sliding-menu-right flex-top-wrapper flex-column right-menu">
     <div class="starry-sky">
         <div class='stars'></div>
         <div class='stars2'></div>

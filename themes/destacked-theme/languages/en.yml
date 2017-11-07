@@ -4,6 +4,11 @@ post:
   view_all_cat: view all posts in category
   by: By
   in: in
+  recent_posts: recent posts
+  archives: archives
+  categories: tags
+  tags: tags
+  tagcloud: tagcloud
 archives:
   category: category
   tagged: tagged
