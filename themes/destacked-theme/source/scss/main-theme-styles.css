@@ -18,9 +18,12 @@ a {
 a:hover {
   color: #e74c3c; }
 
-p {
+p, ol {
   font-size: 1.2rem;
   text-align: justify; }
+
+p a {
+  color: #007bff; }
 
 h1 {
   color: #374252;
@@ -264,6 +267,10 @@ canvas {
   .blog-excerpt-content .h1, .blog-excerpt-content .h2, .blog-excerpt-content .h3, .blog-excerpt-content .h4, .blog-excerpt-content .h5, .blog-excerpt-content .h6, .blog-excerpt-content h1, .blog-excerpt-content h2, .blog-excerpt-content h3, .blog-excerpt-content h4, .blog-excerpt-content h5, .blog-excerpt-content h6 {
     margin-bottom: 0.7rem; }
 
+.blog-row h1, .blog-row h2 {
+  margin: 3rem auto 1rem auto;
+  font-weight: bold; }
+
 .blog-featured-image {
   width: 100%;
   margin-bottom: 1.5rem;
@@ -291,7 +298,8 @@ canvas {
 .read-more {
   vertical-align: text-bottom;
   color: #e74c3c;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none !important; }
 
 .read-more:hover {
   color: #374252; }
@@ -302,7 +310,8 @@ canvas {
   padding: 0.1rem 0.5rem;
   border-radius: 0.3rem;
   font-size: 0.8rem;
-  margin: 0.1rem 0.2rem 0.1rem 0; }
+  margin: 0.1rem 0.2rem 0.1rem 0;
+  text-decoration: none !important; }
 
 .category-link {
   text-transform: uppercase;
@@ -546,7 +555,7 @@ pre {
   h2 {
     font-size: 2rem; }
 
-  p {
+  p, ol {
     font-size: 1rem; }
 
   .sliding-menu a, .sliding-menu p {

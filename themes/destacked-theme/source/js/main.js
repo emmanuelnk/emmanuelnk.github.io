@@ -26,8 +26,9 @@ function checkWindowSize () {
 
 // load highlight.js
 $(document).ready(function() {
-    hljs.initHighlightingOnLoad();
+    // default
 
+    hljs.initHighlightingOnLoad();
     const trim_indent = true;
     // enable highlight
     $('pre code').each(function(i, block) {
@@ -123,10 +124,10 @@ $(document).ready(function() {
     });
     
     $('.hide-sidebar').on('click', function(){
-        if(!$('.sidebar-widget-container').hasClass("is-hidden")){
-            $('.sidebar-widget-container').addClass("is-hidden");
+        if(!$('.sidebar-widget-container').hasClass('is-hidden')){
+            $('.sidebar-widget-container').addClass('is-hidden');
         } else {
-            $('.sidebar-widget-container').removeClass("is-hidden");
+            $('.sidebar-widget-container').removeClass('is-hidden');
         }
     });
 });

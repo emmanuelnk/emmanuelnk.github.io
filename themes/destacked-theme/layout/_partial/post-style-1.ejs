@@ -34,30 +34,30 @@
                 <% }); %>
             </p>
             <% } %>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 post-nav-col">
+                    <% if (post.prev) { %>
+                    <div class="post-nav-container" data-link="<%- url_for(post.prev.path) %>">
+                        <div class="post-nav-icon"><a href="<%- url_for(post.prev.path) %>" class="seotitlelink"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+                        <img src="<%- post.prev.featured_image %>" class="rounded img-fluid post-nav-image" alt="...">
+                        <div class="post-nav-text">
+                            <a href="<%- url_for(post.prev.path) %>" class="seotitlelink"><%- post.prev.title %></a></div>
+                    </div>
+                    <% } %>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 post-nav-col">
+                    <% if (post.next) { %>
+                    <div class="post-nav-container" data-link="<%- url_for(post.next.path) %>">
+                        <div class="post-nav-text"><a href="<%- url_for(post.next.path) %>" class="seotitlelink"><%- post.next.title %></a></div>
+                        <img src="<%- post.next.featured_image %>" class="rounded img-fluid post-nav-image" alt="...">
+                        <div class="post-nav-icon"><a href="<%- url_for(post.next.path) %>" class="seotitlelink"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3 widget-col">
             <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        </div>
-    </div>
-    <div class="row blog-row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 post-nav-col">
-            <% if (post.prev) { %>
-            <div class="post-nav-container" data-link="<%- url_for(post.prev.path) %>">
-                <div class="post-nav-icon"><a href="<%- url_for(post.prev.path) %>" class="seotitlelink"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
-                <img src="<%- post.prev.featured_image %>" class="rounded img-fluid post-nav-image" alt="...">
-                <div class="post-nav-text">
-                    <a href="<%- url_for(post.prev.path) %>" class="seotitlelink"><%- post.prev.title %></a></div>
-            </div>
-            <% } %>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 post-nav-col">
-            <% if (post.next) { %>
-            <div class="post-nav-container" data-link="<%- url_for(post.next.path) %>">
-                <div class="post-nav-text"><a href="<%- url_for(post.next.path) %>" class="seotitlelink"><%- post.next.title %></a></div>
-                <img src="<%- post.next.featured_image %>" class="rounded img-fluid post-nav-image" alt="...">
-                <div class="post-nav-icon"><a href="<%- url_for(post.next.path) %>" class="seotitlelink"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
-            </div>
-            <% } %>
         </div>
     </div>
     <div class="row blog-row">
