@@ -26,9 +26,13 @@ a:hover {
   color: $main-link-color;
 }
 
-p {
+p, ol {
   font-size: 1.2rem;
   text-align: justify;
+}
+
+p a {
+  color:$post-link-color;
 }
 
 h1 {
@@ -168,7 +172,7 @@ h2 {
   }
 
   a:hover {
-    color: #e74c3c;
+    color: $main-link-color;
   }
 
   ul {
@@ -345,6 +349,13 @@ canvas {
   }
 }
 
+.blog-row {
+  h1, h2 {
+    margin:3rem auto 1rem auto;
+    font-weight:bold;
+  }
+}
+
 .blog-featured-image {
   width: 100%;
   margin-bottom: 1.5rem;
@@ -373,6 +384,7 @@ canvas {
   vertical-align: text-bottom;
   color:$slide-nav-link-color-hover;
   font-weight:bold;
+  text-decoration:none!important;
 }
 
 .read-more:hover {
@@ -387,6 +399,7 @@ canvas {
   border-radius: 0.3rem;
   font-size: 0.8rem;
   margin: 0.1rem 0.2rem 0.1rem 0;
+  text-decoration:none!important;
 }
 
 // category styles
@@ -677,7 +690,7 @@ pre {
     font-size: 2rem;
   }
 
-  p {
+  p, ol {
     font-size: 1rem;
   }
 
