@@ -3,7 +3,7 @@
 
 
     <sitemap>
-        <loc>http://localhost:4000/post-sitemap.xml</loc>
+        <loc>https://emmanuelnk.github.io/post-sitemap.xml</loc>
         <lastmod>2020-03-30T17:25:07.897Z</lastmod>
     </sitemap>
 
