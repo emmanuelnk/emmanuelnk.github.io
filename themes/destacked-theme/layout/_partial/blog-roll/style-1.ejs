@@ -1,0 +1,17 @@
+<div class="container-fluid blog-roll">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+            <% page.posts.slice(0, 3).forEach(function(post){ %>
+                <%- partial('items/style-1', { post:post }) %>
+            <% }) %>
+        </div>
+    </div>
+    <div class="row blog-roll-nav">
+        <div class="post-nav-container load-more">
+            <div class="post-nav-text"><a class="seotitlelink">LOAD MORE</a></div>
+        </div>
+        <div class="post-nav-container all-posts">
+            <div class="post-nav-text"><a class="seotitlelink">VIEW ALL POSTS</a></div>
+        </div>
+    </div>
+</div>

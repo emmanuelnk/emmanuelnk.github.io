@@ -1,0 +1,9 @@
+{
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "**/destacked-theme/**",
+    "public/**/*.scss",
+    "**/_*.scss"
+],
+}

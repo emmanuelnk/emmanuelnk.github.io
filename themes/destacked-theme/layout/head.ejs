@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%- css('css/highlightjs_styles/rainbow.css') %>
+    <%- css('css/font-awesome.min.css') %>
+    <%- css('css/bootstrap.min.css') %>
+    <%- css('css/animate.css') %>
+    <%- css('css/hover-min.css') %>
+    <%- css('scss/starry-background.css') %>
+    <%- css('css/flags/flags.min.css') %>
+    <%- css('scss/main-theme-styles.css') %>
+    <%- js('js/vendors/jquery.min.js') %>
+    <%- js('js/vendors/jquery.mousewheel.min.js') %>
+    <%- js('js/vendors/fullPage.js')%>
+    <%- js('js/vendors/popper.min.js') %>
+    <%- js('js/vendors/bootstrap.min.js') %>
+    <%- js('js/vendors/highlight.pack.js') %>
+    <%- js('js/vendors/clipboard.min.js') %>
+    <%- js('js/main.js') %>
+</head>

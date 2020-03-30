@@ -1,0 +1,158 @@
+.container {
+  display: grid;
+  grid-template-rows:
+  [header-start]
+    minmax(min-content, max-content)
+  [header-end main-start]
+    auto
+  [main-end];
+
+  grid-template-columns:
+    [leftMenu-start] 1fr [leftMenu-end main-start] repeat(8, 1fr) [main-end rightMenu-start] 3fr [rightMenu-end];
+
+  height: 100vh;
+  padding: 0;
+}
+
+.header {
+  grid-row: header-start / header-end;
+  grid-column: main-start / main-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  grid-row: main-start / main-end;
+  grid-column: main-start / main-end;
+}
+
+// .footer {
+//   grid-column: main-start / main-end;
+//   grid-row: footer-start / footer-end;
+//   display: flex;
+//   opacity: 1;
+//   align-items: center;
+// }
+
+.left-menu {
+  grid-row: header-start / footer-end;
+  grid-column: leftMenu-start / leftMenu-end;
+  display: flex;
+  opacity: 1;
+  align-items: center;
+}
+
+.hide-left-menu {
+  .header, .content, .footer {
+    grid-column-start: leftMenu-start;
+  }
+
+  .left-menu {
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    position: fixed;
+    left: -20rem;
+  }
+}
+
+.right-menu {
+  grid-row: 1 / -1;
+  grid-column: rightMenu-start / rightMenu-end;
+}
+
+.hide-right-menu {
+  .header, .content, .footer {
+    grid-column-end: rightMenu-end;
+  }
+
+  .right-menu {
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    position: fixed;
+    right: -100rem;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1700px){
+  .container {
+    grid-template-columns: [leftMenu-start] 1fr [leftMenu-end main-start] repeat(5,1fr) [main-end rightMenu-start] 6fr [rightMenu-end];
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    grid-template-rows:
+      [header-start]
+        minmax(min-content, max-content)
+      [header-end leftMenu-start rightMenu-start]
+        minmax(min-content, max-content)
+      [leftMenu-end main-start]
+        auto
+      [main-end rightMenu-end];
+      grid-template-columns:
+        [main-start] 1fr [main-end rightMenu-start] 3fr [rightMenu-end];
+  }
+
+  .right-menu {
+    grid-row: rightMenu-start / rightMenu-end;
+    grid-column: main-start / rightMenu-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .header {
+    grid-row: header-start / header-end;
+    grid-column: main-start / rightMenu-end;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-menu {
+    grid-row: leftMenu-start / leftMenu-end;
+    grid-column: main-start / main-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .content {
+    grid-column: main-start / main-end;
+    grid-row: main-start / main-end;
+  }
+
+
+  .hide-left-menu {
+    .container {
+      grid-template-rows:
+        [header-start]
+          minmax(min-content, max-content)
+        [header-end main-start]
+          auto
+        [main-end];
+    }
+
+    .header, .content, .left-menu {
+      grid-column: main-start / rightMenu-end;
+    }
+  }
+
+  .hide-right-menu  {
+    .container {
+      grid-template-columns:
+        [main-start] 1fr [main-end rightMenu-start] 3fr [rightMenu-end];
+    }
+
+    .header, .content, .left-menu {
+      grid-column: main-start / rightMenu-end;
+    }
+  }
+}
+

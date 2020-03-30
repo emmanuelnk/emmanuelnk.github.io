@@ -1,5 +1,6 @@
 /**************************  SCSS VARIBLES ******************************/
 @import "variables";
+
 /**************************  END VARIBLES ******************************/
 @font-face {
   font-family: $theme-font;
@@ -84,7 +85,7 @@ h2 {
   height:5rem;
 }
 
-.blog-header {
+.nav-container {
   position:fixed;
   top:0;
   background:$body-background-color;
@@ -359,6 +360,11 @@ canvas {
   margin-top: 15rem;
   .row {
     margin-bottom:1rem;
+  }
+
+  .center-column-content {
+    display: flex;
+    align-items: center;
   }
 }
 

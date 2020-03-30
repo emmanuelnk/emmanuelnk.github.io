@@ -1,0 +1,59 @@
+<div class="post-section">
+    <% if (post.hero_image) { %>
+        <div class="wide">
+            <img src="<%- url_for(post.path) + post.hero_image %>" class="wide-img ">
+        </div>
+        <% } %>
+
+        <div class="post-container">
+            <div class="post-title"><%- post.title %></div>
+            <div class="post-author">
+                <i class="fas fa-calendar fa-fw" aria-hidden="true"></i>
+                <% if(post.author) { %>
+                <%- __("by") %> &nbsp<%- post.author %>,&nbsp
+                <% } %>
+                <%- `${date(post.date, "dddd, MMM D YYYY")}`.toLowerCase() %>
+            </div>
+
+            <% if (post.categories.length > 0) { %>
+            <div class="post-category">
+                <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>
+                <% post.categories.forEach(function(category){ %>
+                <a class="category-link hvr-pulse-shrink" title="<%- __("post.view_all_cat")%>: <%- category.name %>" href="<%- category.permalink %>"><%- category.name %></a>
+                <% }); %>
+            </div>
+            <% } %>
+
+            <div class="post-content"><%- post.content %></div>
+            <% if (post.tags.length > 0) { %>
+            <div class="post-tags">
+                <% post.tags.forEach(function(tag){ %>
+                <a class="blog-post-tag hvr-pulse-shrink" href="<%- tag.permalink %>">
+                    <i class="fas fa-tag fa-fw" aria-hidden="true"></i><%- tag.name %>
+                </a>
+                <% }); %>
+            </div>
+            <% } %>
+
+            <div class="post-nav">
+                <% if (post.prev) { %>
+                    <div class="post-nav-container post-nav-prev" data-link="<%- url_for(post.prev.path) %>" data-tooltip="<%- post.prev.title %>">
+                        <div class="post-nav-icon"><a href="<%- url_for(post.prev.path) %>" class="seotitlelink"><i class="fas fa-chevron-left post-nav-chevron" aria-hidden="true"></i></a></div>
+                        <div class="post-nav-text">
+                            <a href="<%- url_for(post.prev.path) %>" class="seotitlelink"><%- truncate(post.prev.title, {length: 40}) %></a></div>
+                    </div>
+                    <% } %>
+                <% if (post.next) { %>
+                    <div class="post-nav-container post-nav-next" data-link="<%- url_for(post.next.path) %>" data-tooltip="<%- post.next.title %>">
+                        <div class="post-nav-text"><a href="<%- url_for(post.next.path) %>" class="seotitlelink"><%- truncate(post.next.title, {length: 40}) %></a></div>
+                        <div class="post-nav-icon"><a href="<%- url_for(post.next.path) %>" class="seotitlelink"><i class="fas fa-chevron-right post-nav-chevron" aria-hidden="true"></i></a></div>
+                    </div>
+                    <% } %>
+            </div>
+
+            <div id="disqus_thread"></div>
+            <%- partial('components/post-disqus',{config: config,page:page})%>
+        </div>
+
+        <div class="post-sidebar"><%- partial('_partial/pages/components/post-sidebar', null, {cache: !config.relative_link}) %></div>
+</div>

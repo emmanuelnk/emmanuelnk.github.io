@@ -1,0 +1,6 @@
+.footer {
+  @include themify($themes) {
+    background: themed('bodyBackgroundColor');
+    color: themed('bodyFontColor');
+  }
+}

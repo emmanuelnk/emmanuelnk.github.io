@@ -1,0 +1,66 @@
+// highlight js styles
+pre {
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.hidden-overflow-x {
+  overflow-x: hidden;
+}
+
+.hljs {
+  font-family: $theme-font;
+  padding: 0rem 1rem 2rem 1.5rem;
+}
+
+.code-caption .code-caption-label {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.code-caption {
+  text-align: right;
+  display: none;
+}
+.code-copy-c {
+  @include themify($themes) {
+    color: themed("codeCopyIconColor");
+    background: themed("preBackgroundColor");
+  }
+
+  text-align: right;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+}
+.code-copy-c:hover {
+  @include themify($themes) {
+    color: themed("codeCopyIconHoverColor");
+  }
+  cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  pre {
+    font-size: 0.7rem;
+    border-radius: 0.4rem;
+    position: relative;
+    line-height: 1.2;
+  }
+
+  .hljs {
+    font-family: $theme-font;
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+  .code-pre-block p {
+    font-size: 0.7rem;
+  }
+
+}

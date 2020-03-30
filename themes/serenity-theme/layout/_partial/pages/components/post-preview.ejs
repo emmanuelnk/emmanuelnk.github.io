@@ -1,0 +1,11 @@
+<div class='blog-post-preview-container'>
+    <div class="blog-excerpt-content">
+        <div class="blog-excerpt-title"><a href="<%- url_for(post.path) %>" class="seotitlelink"><%- post.title %></a></div>
+        <div class="blog-excerpt-date"><span class="blogdate"><%- `${date(post.date,"dddd, MMM D YYYY")}`.toLowerCase() %></span></div>
+        <% if (post.excerpt) {%>
+        <div class="blog-excerpt-text"><%- post.excerpt %></div>
+        <% } else { %>
+        <div class="blog-excerpt-text"><%- post.content.replace(/<(?:.|\n)*?>/gm, '').replace(/\n/g,'').substring(0, 180 - 3) + " ... " %><a class="read-more" href="<%- url_for(post.path)%>"><%- __("index.read_more") %></a></div>
+        <% } %>
+    </div>
+</div>
