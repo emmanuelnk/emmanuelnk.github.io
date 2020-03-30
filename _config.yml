@@ -104,7 +104,7 @@ dstkd:
     location: beijing, china
     intro: Hi there stranger,
     description: I'm <b>Emmanuel Nsubuga Kyeyune</b>. Software engineer, front/back-end dabbler (mostly react, node.js, python). Currently involved in the design and maintenance of cloud based applications. When I'm not working you can catch me watching indie films.<br><br>I try to write about anything and everything so feel free to look around!
-    nav_img_url: /img/emmanuel_somber_bw_512.jpg #image @ right side of the navbar/popup (recommmended:512x512px)
+    nav_img_url: /images/emmanuel_somber_bw_512.jpg #image @ right side of the navbar/popup (recommmended:512x512px)
   social_media_links:
     twitter: https://twitter.com/emmanuel_n_k
     github: https://github.com/emmanuelnk
