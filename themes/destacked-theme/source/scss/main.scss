@@ -1,0 +1,39 @@
+@import
+  'abstracts/variables';
+
+@import
+  'vendors/starry-background';
+
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/left-menu',
+  'layout/right-menu',
+  'layout/bottom-menu';
+
+
+// 5. Components
+@import
+  'components/image',
+  'components/post-item',
+  'components/contact';
+  ;
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/blog-roll',
+  'pages/contact',
+  'pages/archive',
+  'pages/post',
+  'pages/page';
+
+// 7. Themes
+@import
+  'themes/default';

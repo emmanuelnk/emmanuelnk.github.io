@@ -1,0 +1,14 @@
+archives:
+  show_count: true
+  order: -1
+  type: monthly
+categories:
+  show_count: true
+  order: -1
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+favicon: img/favicon.ico

@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="header-icons">
+        <span title="menu" id="left-menu-icon" class="hvr-pulse-shrink header-icon menu-open"><i class="fas fa-bars" aria-hidden="true"></i></span>
+    </div>
+    <div class="header-title">
+        <span data-ispost="<%- is_post()?"true":"false"%>" data-person-info='<%- encodeURIComponent(JSON.stringify(config.dstkd).replace(/'/g, "%27")) %>' ></span>
+        <a class="title-text hvr-rotate" title="go to homepage" href="<%- url_for(config.root) %>"><%= config.title %></a>
+        <%- image_tag(config.dstkd.person_info.nav_img_url, { title:"click me!", class:"img header-img hvr-pulse-grow"}) %>
+    </div>
+</div>

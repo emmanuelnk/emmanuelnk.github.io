@@ -1,0 +1,336 @@
+.post-section {
+  display: grid;
+  grid-template-rows: minmax(min-content, max-content) minmax(
+      min-content,
+      max-content
+    );
+  grid-template-columns: repeat(12, 1fr);
+
+  .wide {
+    grid-column: 1/ -1;
+    grid-row: 1 / span 1;
+    max-width: 100%;
+
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      max-height: 50vh;
+    }
+  }
+
+  .post-container {
+    grid-column: 5/ span 4;
+    grid-row: 2 / span 1;
+    max-width: 40rem;
+    min-width: 28rem;
+    justify-self: center;
+
+    .post-title {
+      font-size: 3rem;
+      font-weight: 700;
+      padding: 5rem 0 1rem 0;
+    }
+
+    .post-author {
+      font-size: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .post-category {
+      font-size: 1rem;
+    }
+
+    .post-content {
+      padding: 2rem 0 0 0;
+
+      a {
+        @include themify($themes) {
+          color: themed("postContentLinkColor");
+        }
+      }
+
+      a:hover {
+        @include themify($themes) {
+          color: themed("postContentLinkHoverColor");
+        }
+      }
+    }
+
+    .post-tags {
+      .blog-post-tag {
+        @include themify($themes) {
+          color: themed("postContentTagColor");
+          background: themed("postContentTagBackgroundColor");
+        }
+
+        padding: 0.1rem 0.5rem;
+        border-radius: 0.3rem;
+        font-size: 0.8rem;
+        margin: 0.1rem 0.2rem 0.1rem 0;
+        text-decoration: none !important;
+      }
+
+      :hover {
+        @include themify($themes) {
+          color: themed("postContentTagColor") !important;
+          background: themed("postContentTagHoverColor");
+        }
+      }
+    }
+
+    .post-nav {
+      display: grid;
+      padding: 1rem 0 5rem 0;
+      justify-content: space-between;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+
+      .post-nav-container {
+        @include themify($themes) {
+          border: 1px themed("postContentNavFontColor") solid;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem 0;
+        width: 95%;
+      }
+
+      .post-nav-container:hover {
+        @include themify($themes) {
+          background: themed("postContentNavBackgroundHoverColor");
+        }
+
+        cursor: pointer;
+        animation: gradiate-background;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+
+        .post-nav-icon a,
+        .post-nav-text a {
+          @include themify($themes) {
+            color: themed("postContentNavBackgroundColor");
+          }
+          animation: gradiate-text;
+          animation-duration: 1s;
+          animation-direction: alternate;
+          animation-timing-function: ease-out;
+        }
+      }
+
+      .post-nav-prev {
+        grid-row: 1 / -1;
+        grid-column: 1 / span 1;
+        justify-self: start;
+      }
+
+      .post-nav-next {
+        grid-row: 1 / -1;
+        grid-column: 2 / span 1;
+        justify-self: end;
+      }
+
+      @keyframes gradiate-background {
+        0% {
+          @include themify($themes) {
+            background: themed("postContentNavBackgroundColor");
+            color: themed("postContentNavFontColor");
+          }
+        }
+        100% {
+          @include themify($themes) {
+            background: themed("postContentNavFontColor");
+            color: themed("postContentNavBackgroundColor");
+          }
+        }
+      }
+
+      @keyframes gradiate-text {
+        0% {
+          @include themify($themes) {
+            color: themed("postContentNavFontColor");
+          }
+        }
+        100% {
+          @include themify($themes) {
+            color: themed("postContentNavBackgroundColor");
+          }
+        }
+      }
+
+      [data-tooltip]:before {
+        @include themify($themes) {
+          color: themed("postContentNavBackgroundColor");
+        }
+        /* needed - do not touch */
+        content: attr(data-tooltip);
+        position: absolute;
+        opacity: 0;
+
+        /* customizable */
+        transition: all 0.15s ease;
+        padding: 10px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+      }
+
+      [data-tooltip]:hover:before {
+        @include themify($themes) {
+          background: themed("postContentNavFontColor");
+        }
+        /* needed - do not touch */
+        opacity: 0.9;
+
+        /* customizable */
+        margin-top: -50px;
+        margin-left: 20px;
+      }
+
+      .post-nav-icon {
+        @include themify($themes) {
+          color: themed("postContentNavBackgroundColor");
+          background: themed("postContentNavFontColor");
+        }
+        height: 100%;
+        font-size: 2.5rem;
+      }
+
+      .post-nav-text {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+      }
+
+      .post-nav-chevron {
+        @include themify($themes) {
+          color: themed("postContentNavBackgroundColor");
+        }
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .post-sidebar {
+    grid-column: 9/span 2;
+    grid-row: 2/span 1;
+    padding: 16rem 2rem 0 2rem;
+    justify-self: start;
+
+    .sidebar-widget-container {
+      @include themify($themes) {
+        border-left: 1px solid themed("postSidebarFontColor");
+      }
+      padding: 1rem 1rem;
+
+      .widget-title {
+        font-size: 1.1rem;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .widget > ul {
+        padding: 0;
+      }
+
+      .widget > ul > li {
+        text-align: left;
+        font-size: 0.9rem;
+        list-style-type: none;
+      }
+
+      .widget > ul > li > a,
+      .widget-title {
+        @include themify($themes) {
+          color: themed("postSidebarFontColor");
+        }
+      }
+      .widget > ul > li > a:hover {
+        @include themify($themes) {
+          color: themed("postSidebarLinkHoverColor");
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .post-section {
+    grid-template-rows:
+      minmax(min-content, max-content)
+      minmax(min-content, max-content)
+      minmax(min-content, max-content);
+
+    .post-sidebar {
+      grid-column: 5/span 4;
+      grid-row: 3/span 1;
+      padding: 0;
+      justify-self: center;
+      width: 100%;
+      padding: 0 0.4rem;
+
+      .sidebar-widget-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post-section {
+    .post-container {
+      grid-column: 1/ -1;
+      max-width: 90vw;
+      min-width: 16rem;
+
+      p, .post-author, .post-category, .post-nav-text {
+        font-size:0.9rem;
+      }
+
+      .post-author {
+        padding: .3rem 0;
+      }
+
+      .post-title {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 2rem 0 1rem 0;
+      }
+
+      .post-content {
+        padding: 1rem 0 0 0;
+      }
+
+      .post-nav {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        .post-nav-container {
+          width: 100%;
+        }
+
+        .post-nav-text {
+          font-size: 0.9rem;
+        }
+
+        .post-nav-prev {
+          grid-row: 1 / span 1;
+          grid-column: 1 / -1;
+        }
+
+        .post-nav-next {
+          grid-row: 2 / span 1;
+          grid-column: 1 / -1;
+        }
+      }
+    }
+
+    .post-sidebar {
+      grid-column: 1 /-1;
+      width: 90vw;
+    }
+  }
+}

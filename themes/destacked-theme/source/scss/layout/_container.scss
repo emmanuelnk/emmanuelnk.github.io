@@ -1,0 +1,10 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+
+.page-content {
+  flex-grow: 1;
+}
