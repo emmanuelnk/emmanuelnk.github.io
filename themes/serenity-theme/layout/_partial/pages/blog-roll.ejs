@@ -14,7 +14,7 @@
 </div>
 </div> -->
 <div class="blog-roll-container">
-    <% page.posts.slice(10, 20).forEach(function(post){ %>
+    <% page.posts.forEach(function(post){ %>
         <%- partial('components/post-preview', { post:post }) %>
     <% }) %>
 </div>

@@ -757,6 +757,9 @@ h2 {
   min-width: 10rem;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .blog-section .fp-tableCell .blog-roll-container .blog-post-preview-container .blog-excerpt-content, .archive-section .blog-roll-container .blog-post-preview-container .blog-excerpt-content {
