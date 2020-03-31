@@ -750,6 +750,10 @@ h2 {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
 }
 
 .blog-section .fp-tableCell .blog-roll-container .blog-post-preview-container, .archive-section .blog-roll-container .blog-post-preview-container {
@@ -774,6 +778,10 @@ h2 {
 
 .blog-section .fp-tableCell .blog-roll-container .blog-post-preview-container .blog-excerpt-content .blog-excerpt-date, .archive-section .blog-roll-container .blog-post-preview-container .blog-excerpt-content .blog-excerpt-date {
   padding: 0.5rem 0;
+}
+
+.blog-section .fp-tableCell .blog-roll-container .blog-post-preview-container .blog-excerpt-content .blog-excerpt-text, .archive-section .blog-roll-container .blog-post-preview-container .blog-excerpt-content .blog-excerpt-text {
+  font-size: 1.2rem;
 }
 
 .blog-section .fp-tableCell .blog-roll-container::-webkit-scrollbar, .archive-section .blog-roll-container::-webkit-scrollbar {

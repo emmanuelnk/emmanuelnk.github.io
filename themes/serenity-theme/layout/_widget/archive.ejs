@@ -1,6 +1,6 @@
 <% if (site.posts.length){ %>
   <div class="widget-wrap">
-    <div class="widget-title"><%= __('post.archives') %><i class="fas fa-archive fa-fw" aria-hidden="true"></i></div>
+    <div class="widget-title"><i class="fas fa-archive fa-fw" aria-hidden="true">&nbsp;</i><%= __('post.archives') %></div>
     <div class="widget">
       <%- list_archives({show_count: theme.show_count, type: theme.archive_type}) %>
     </div>

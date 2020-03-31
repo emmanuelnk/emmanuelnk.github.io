@@ -64,6 +64,8 @@
     display: flex;
     flex-flow: row wrap;
     overflow: scroll;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
 
     .blog-post-preview-container {
       max-width: 60rem;
@@ -84,7 +86,9 @@
           padding: 0.5rem 0;
         }
 
-        // .blog-excerpt-text {}
+        .blog-excerpt-text {
+          font-size: 1.2rem;
+        }
       }
 
     }
