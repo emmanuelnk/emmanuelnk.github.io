@@ -74,7 +74,13 @@ function initializeFullPageJS() {
       container.classList.toggle("hide-left-menu");
     });
 
-  [closeRightMenu, headerImg, envelopeIcon].forEach(element => {
+  if(envelopeIcon)
+    envelopeIcon.addEventListener("click", event => {
+      const str = atob('MTAyLDExMCwxMTAsOTgsMTA4LDEyMiwxMDIsMTIyLDExOCwxMTEsMTAyLDY1LDEwNCwxMTAsOTgsMTA2LDEwOSw0NywxMDAsMTEyLDExMA==').split(',').map(c => String.fromCharCode(parseInt(c)-1)).join('')
+      window.location.href = `mailto:${str}?subject=Hello there&body=Hi Emmanuel,`;
+    });
+
+  [closeRightMenu, headerImg].forEach(element => {
     if(element)
       element.addEventListener("click", event => {
         if(!container.classList.contains('hide-left-menu'))
