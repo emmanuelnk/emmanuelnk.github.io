@@ -2,7 +2,7 @@
 title: My Ultimate Hexo Theme Creation Tutorial
 layout: post
 date: 2017-11-08 01:13:31
-author:
+author: emmanuel
 featured_image:
 categories: [hexo]
 tags: [hexo, custom themes, blog creation]
@@ -87,8 +87,8 @@ _config.yml
 package.json
 yarn.lock
 .gitignore
-                    
-``` 
+```
+
 If you've used NodeJS and NPM before, you'll know what `package.json` and the `node_modules` folder are. 
 
 To those new to this, `package.json` is   a file that keeps track of all the modules your project depends on. These modules are then install in the `node_modules` folder when one runs `npm install`. 

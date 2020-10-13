@@ -39,7 +39,7 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: false
   auto_detect: true
   tab_replace:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: serenity-theme
+theme: cactus
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -82,16 +82,6 @@ deploy:
   branch: master
 
 all_minifier: true
-
-hljs:
-  enable: true #true to enable the plugin
-  line_number: frontend # add line_number in frontend or backend
-  trim_indent: backend # trim the indent of code block to prettify output. backend or front-end (recommend)
-  copy_code: true # show copy code in caption.
-  label:
-    left: Code
-    right: ':'
-    copy: copy
 
 # misc
 favicon: images/favicon.ico
@@ -103,7 +93,7 @@ dstkd:
     country: uganda
     location: beijing, china
     intro: Hi there stranger,
-    description: I'm <b>Emmanuel Nsubuga Kyeyune</b>. Software engineer, front/back-end dabbler (mostly react, node.js, python). Currently involved in the design and maintenance of cloud based applications. When I'm not working you can catch me watching indie films.<br><br>I try to write about anything and everything so feel free to look around!
+    description: I'm <b>Emmanuel Nsubuga Kyeyune</b>. Software engineer, front/back-end dabbler (mostly react, node.js, python). Currently involved in the design and maintenance of cloud based applications. When I'm not working you can catch me watching indie films.
     nav_img_url: /images/emmanuel_somber_bw_512.jpg #image @ right side of the navbar/popup (recommmended:512x512px)
   social_media_links:
     twitter: https://twitter.com/emmanuel_n_k
@@ -118,6 +108,9 @@ dstkd:
     - https://imgs.xkcd.com/comics/onboarding.png
     - https://imgs.xkcd.com/comics/old_accounts.png
 
+theme_config:
+  colorscheme: emma
+
 # Disqus comments
 disqus_shortname: emmanuelnk-github-io
 
@@ -126,46 +119,3 @@ sitemap:
     path: sitemap.xml
     tag: false
     category: false
-
-#jsonContent
-jsonContent:
-  meta: true
-  dateFormat: dddd, MMM D YYYY
-  dafts: false
-  file: all_content.json
-  keywords: undefined
-  pages:
-    title: true
-    slug: true
-    date: true
-    updated: true
-    comments: true
-    path: true
-    link: true
-    permalink: true
-    excerpt: true
-    keywords: false
-    text: false
-    raw: false
-    content: true
-    author: true
-  posts:
-    title: true
-    slug: true
-    date: true
-    updated: true
-    comments: false
-    path: true
-    link: true
-    permalink: true
-    excerpt: true
-    keywords: false
-    text: false
-    raw: false
-    content: true
-    author: true
-    categories: true
-    tags: true
-
-
-
