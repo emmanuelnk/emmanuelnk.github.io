@@ -1,5 +1,6 @@
 {
   "name": "hexo-site",
+  "engine": "12.19.0",
   "version": "0.0.0",
   "private": true,
   "hexo": {
